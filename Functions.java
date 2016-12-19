@@ -63,6 +63,9 @@ public class Functions {
 		char maj = (char) random;
 		System.out.print(maj);
 	}
+	/*
+	 * This function ask if the user want another password
+	 */
 	public static char tryAgain() {
 		sc = new Scanner(System.in);
 		char yesNoMaybe;
