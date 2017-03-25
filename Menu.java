@@ -34,6 +34,20 @@ public class Menu {
 						Functions.randomMaj();
 				}
 				break;
+			case 4 : // An password with special characters
+				System.out.println("\nYour password : ");
+				for (int i = nbr; i > 0; i--) {
+					random = (int) (Math.random()*4);
+					if(random == 3)
+						Functions.randomAll();
+					if (random == 2)
+						Functions.randomMinus();
+					else if (random == 1)
+						Functions.randomNumbers();
+					else
+						Functions.randomMaj();
+				}
+				break;
 			}
 			answer=Functions.tryAgain();
 		} while(answer=='Y' || answer == 'y');

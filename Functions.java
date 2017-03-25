@@ -30,9 +30,10 @@ public class Functions {
 				+ "\n1. A numeral password (ex : 12345678)"
 				+ "\n2. An alphanumeral password (ex : 123df7y4)"
 				+ "\n3. An alphanumeral password with caps (ex : 12Za3Z6e)"
+				+ "\n4. A password with all charcters (ex : 1!%2Za3Ze6e)"
 				+ "\nPlease Enter your choice :");
 		choice = Integer.parseInt(sc.nextLine());
-		while (choice < 1 || choice > 3) {
+		while (choice < 1 || choice > 4) {
 			System.out.println("Choose an option of the menu"
 					+ "\nPlease try again : ");
 			choice = Integer.parseInt(sc.nextLine());
@@ -64,8 +65,13 @@ public class Functions {
 		System.out.print(maj);
 	}
 	/*
-	 * This function ask if the user want another password
+	 * This function print a random character
 	 */
+	public static void randomAll() {
+		int random = (int) (Math.random()*95)+31;
+		char c = (char) random;
+		System.out.print(c);
+	}
 	public static char tryAgain() {
 		sc = new Scanner(System.in);
 		char yesNoMaybe;
