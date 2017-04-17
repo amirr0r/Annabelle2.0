@@ -51,6 +51,6 @@ public class Menu {
 			}
 			answer=Functions.tryAgain();
 		} while(answer=='Y' || answer == 'y');
-		System.out.println("\nThank you for using Annabelle2.0 ! Mine is better ! Amir is the stronger");
+		System.out.println("\nThank you for using Annabelle2.0 !");
 	}
 }
